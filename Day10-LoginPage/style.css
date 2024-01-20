@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #454dffaa;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: black;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+#name , #pass {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 2px;
+    margin-top: 20px;
+    border-color: #454dffaa;
+    outline: none;
+    text-align: left;
+}
+
+span{
+    color: #454dffaa;
+}
+
+.btn{
+    padding: 22px;
+    margin-top: -30px;
+}
+
+.button {
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 16px;
+    border-color: #454dffaa;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.button1 {
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #454dffaa;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    border-color: #454dffaa;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.button:hover{
+    color: white;
+    background-color: #454dffaa;
+    transition: all 0.3s;
+}
+.button1:hover{
+    color: black;
+    background-color: transparent;
+    transition: all 0.5s;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login page || milan </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1> <span>L</span>ogin</h1>
+    <div class="input-box">
+      <input type="text" id="name" placeholder="username">
+      <input type="text" id="pass" placeholder="password">
+    </div>
+    <div class="btn">
+      <input type="button" value="Login" class="button">
+      <input type="reset" value="Reset" class="button1">
+    </div>
+  </div>
+
+  <script>
+    let resetBtn = document.querySelector(".button1")
+    let nameInp = document.getElementById("name")
+    let passInp = document.getElementById("pass")
+    resetBtn.addEventListener("click", resetFunction = () => {
+      nameInp.value='';
+      passInp.value='';
+    })
+
+    let loginBtn = document.querySelector(".button")
+    loginBtn.addEventListener("click" , loginFunction =() => {
+    if(nameInp.value === '' ){
+        alert("please fill the username ");
+    }
+    else if( passInp.value === ''){
+      alert("please fill the password ")
+    }
+    else if(nameInp.value == "milan" && passInp.value == "000"){
+      alert("Login success")
+    }
+    else{
+      alert("incorrect username or password")
+    }
+  })
+    
+  </script>
+</body>
+</html>
