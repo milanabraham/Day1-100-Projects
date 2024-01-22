@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* overflow-x: hidden; */
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#imp{
+   margin-top: 200px;
+}
+span{
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    margin-bottom: 200px;
+    color: blue;
+    font-weight: bold;
+
+}
+
+h4{
+    display: none;
+}
+.game{
+    width: 600px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+}
+#character{
+    width: 60px;
+    height: 50px;
+    /* background-color: red; */
+    position:relative;
+    top: 150px;
+    user-select: none;
+
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    user-select: none;
+    cursor: none;
+}
+.animate{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#block{
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 100px;
+    left: 600px;
+    animation: block 1s infinite linear;
+}
+@keyframes block{
+    0%{left: 600px}
+    100%{left: -20px}
+}
+p{
+    text-align: center;
+}
